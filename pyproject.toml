@@ -3,14 +3,14 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "envo"
+name = "modularizer-fpr"
 version = "0.1.0"
-description = "Environment variable loading utility with project root detection"
+description = "Heuristically detect the root of a project directory"
 readme = "README.md"
 requires-python = ">=3.10"
-license = {text = "MIT"}
+license = {text = "Unlicense"}
 authors = [
-    {name = "mod"}
+    {name = "Torin Halsted", email = "modularizer@gmail.com"}
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -23,9 +23,5 @@ classifiers = [
 ]
 
 [project.scripts]
-fpr = "envo.find_project_root:main"
-envo = "envo:main"
-
-[tool.setuptools.packages.find]
-where = ["src"]
+fpr = "fpr:main"
 
